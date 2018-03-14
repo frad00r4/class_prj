@@ -1,0 +1,13 @@
+version: '2'
+services:
+  class_project:
+    build: '.'
+    image: 'class_project'
+    ports:
+      - '8000:8000'
+    volumes:
+      - './:/opt/class_project'
+
+volumes:
+  db_data:
+    external: false
